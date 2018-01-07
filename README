@@ -1,0 +1,19 @@
+Included are the scripts we used to perform
+our analysis on whether Ernst-based classes  emerge
+closely in various embedding spaces.
+
+Included are the Python Scripts:
+w2txt.py and embed2word2vec.py -- The first two scripts were mostly for processing our embedding files into similar formats
+We used the gensim library to convert our word2vec embedding file from .bin to .txt format.
+We also used the gensim library to change both dependency and glove embedding types into 
+the word2vec format,so they could be run with gensim
+
+cos_sim.py -- In this script we loaded each embedding file as a model in gensim, so that we could run cosine
+similarity based on our dictionary of Ernst classes
+
+precision_recall.py and run_pr.py -- We used the next two scripts to evaluate our results from running cosine similarity
+on our embedding types. We also plotted the results using pylab and code publicly available and borrow from:
+
+https://stackoverflow.com/questions/20705968/i-cant-plot-the-following-data-precision-recall-curve
+
+
